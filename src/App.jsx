@@ -1,6 +1,8 @@
 import React from 'react';
 import rocketdab from './assets/rocketdab.png'
-
+import rocketman from './assets/rocketman.png'
+import adventurer from './assets/rocketride.png'
+import launch from './assets/rocketlaunch.png'
 const App = () => {
   return (
    <>
@@ -32,7 +34,7 @@ const App = () => {
                 {/* main section  */}
            <main className='max-w-4xl mx-auto'>
 
-            <section id='hero' className='flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 mb-12'> 
+            <section id='hero' className='flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 mb-12 scroll-mt-40'> 
               
               <article className='sm:w-1/2' >
                {/* content  */}
@@ -56,10 +58,38 @@ const App = () => {
                 
                <hr className='mx-auto dark:bg-white w-1/2' />
 
-               <section id='rockets' className='p-6 my-12 ' >
+
+               {/* Our Rockets   */}
+             
+               <section id='rokect' className='p-6 my-12 scroll-mt-20' >
                  <h2 className='text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-600 dark:text-white'>
                   Our Rockets 
                   </h2> 
+                  <ul className="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
+                     <li className="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100  bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl  ">
+                     <img src={rocketman} alt="explorer" />
+
+                     <h3 className='text-3xl text-center mt-2 dark:text-white text-slate-900'> Explorer</h3>
+                     <p className='hidden sm:block text-3xl text-center dark:text-slate-400 text-slate-500'> $</p>
+                     <p className='sm:hidden text-2xl mt-2 text-center dark:text-slate-400 text-slate-500'> Affordable Exploretion</p>
+                     </li>  
+
+                     <li className="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100  bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl  ">
+                     <img src={adventurer} alt="adventurer" />
+
+                     <h3 className='text-3xl text-center mt-2 dark:text-white text-slate-900'> Adventurer</h3>
+                     <p className='hidden sm:block text-3xl text-center dark:text-slate-400 text-slate-500'> $$</p>
+                     <p className='sm:hidden text-2xl mt-2 text-center dark:text-slate-400 text-slate-500'> Best selling rockets! </p>
+                     </li>  
+
+                     <li className="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100  bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl  ">
+                     <img src={launch} alt="launch" />
+
+                     <h3 className='text-3xl text-center mt-2 dark:text-white text-slate-900'> Infinity</h3>
+                     <p className='hidden sm:block text-3xl text-center dark:text-slate-400 text-slate-500'> $$$</p>
+                     <p className='sm:hidden text-2xl mt-2 text-center dark:text-slate-400 text-slate-500'> Luxury Starship </p>
+                     </li>  
+                  </ul> 
                 </section>
 
                 <hr className='mx-auto dark:bg-white w-1/2' />
